@@ -1,0 +1,6 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" rx="32" fill="#101420"/>
+  <path d="M400 105L520 170V300L400 365L280 300V170L400 105Z" stroke="#8B5CF6" stroke-width="18"/>
+  <path d="M400 158L474 199V281L400 322L326 281V199L400 158Z" fill="#7C3AED" fill-opacity="0.25" stroke="#A78BFA" stroke-width="10"/>
+  <text x="400" y="410" text-anchor="middle" fill="#C4B5FD" font-size="36" font-family="Arial, Helvetica, sans-serif">NEXUS MOD</text>
+</svg>

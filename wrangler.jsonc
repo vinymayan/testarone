@@ -1,0 +1,34 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "main": ".open-next/worker.js",
+  "name": "testarone",
+  "compatibility_date": "2026-06-29",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "vars": {
+    "NEXT_PUBLIC_SITE_URL": "https://teste.vinymods.com.br",
+    "NEXUS_OAUTH_REDIRECT_URI": "https://teste.vinymods.com.br/api/auth/nexus/callback",
+    "NEXUS_OAUTH_AUTH_URL": "https://users.nexusmods.com/oauth/authorize",
+    "NEXUS_OAUTH_TOKEN_URL": "https://users.nexusmods.com/oauth/token",
+    "NEXUS_COLLECTION_CATEGORY_IDS": "{\"Total Overhaul\":1,\"Themed\":2,\"Vanilla Plus\":3,\"Essentials\":4,\"Miscellaneous\":5}"
+  },
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "services": [
+    {
+      "binding": "WORKER_SELF_REFERENCE",
+      "service": "create-list"
+    }
+  ],
+  "images": {
+    "binding": "IMAGES"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "teste",
+      "database_id": "43bfa1d7-1924-4764-891a-5a021388c73f"
+    }
+  ]
+}
